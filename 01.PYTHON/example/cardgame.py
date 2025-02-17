@@ -9,6 +9,10 @@ def play_game():
     player2 = Player('beta')
     
     dealer = GameDealer()
+    dealer.make_deck()
+    player1.add_card_list(dealer.distribute_card(10))
+    player2.add_card_list(dealer.distribute_card(10))
+    
     
 if __name__ == '__main__':
     play_game()
